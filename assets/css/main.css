@@ -17,7 +17,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -254,6 +255,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: calc(100% - 4em);
 		width: 35em;
+		
 	}
 
 		.container.xsmall {
@@ -2234,6 +2236,7 @@ input, select, textarea {
 		}
 
 		.image.left {
+			width: 100%;
 			float: left;
 			margin: 0 1.5em 1em 0;
 			top: 0.25em;
@@ -2247,12 +2250,33 @@ input, select, textarea {
 
 		.image.left, .image.right {
 			max-width: 40%;
+			
 		}
-
-			.image.left img, .image.right img {
+			.image.left img, .image.right img {			
 				width: 100%;
+				overflow: hidden;
+				
+			}
+			
+			.image.left .swap-on-hover__back-image {
+			  position: relative;
+			}
+			/* 
+				We set z-index to be higher than the back image, so it's alwyas on the front.
+			We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect. 
+			*/
+			.image.left .swap-on-hover__front-image {
+			  position: absolute;
+			  z-index: 9999;
+			  transition: opacity .5s linear;
+			  cursor: pointer;
 			}
 
+			/* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
+			.image.left:hover > .swap-on-hover__front-image{
+			  opacity: 0;
+			}
+			
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
@@ -2262,6 +2286,9 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+			
+		
+
 
 /* List */
 
@@ -2750,6 +2777,7 @@ input, select, textarea {
 				margin-right: 1px;
 				vertical-align: middle;
 				width: calc(100% - 10px);
+				
 			}
 
 		.main .goto-next {

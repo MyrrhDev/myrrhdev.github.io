@@ -249,6 +249,10 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	
+	
+	
+	
 /* Container */
 
 	.container {
@@ -288,6 +292,11 @@ input, select, textarea {
 				width: 80% !important;
 				max-width: 100% !important;
 			}
+			
+			.spoticontainer {
+                width: 80% !important;
+				max-width: 100% !important;                
+            }
 
 		}
 
@@ -296,6 +305,10 @@ input, select, textarea {
 			.container {
 				width: 100% !important;
 			}
+			
+			.spoticontainer {
+                width: 100% !important;               
+            }
 
 		}
 
@@ -2748,6 +2761,33 @@ input, select, textarea {
 			opacity: 1;
 		}
 
+/* Horizontal Main */
+    /*.spotimain {
+        position: relative;
+    }
+    
+    section.special, article.special {
+		text-align: center;
+	}*/
+	
+    .spoticontainer {
+		margin: 0 auto;
+		max-width: calc(100% - 4em);
+		/*width: 35em;*/
+		
+	}
+	
+	.main .spoticontainer {
+			padding: 5em 2.5em 8em 2.5em ;
+			background: rgba(255, 255, 255, 0.95);
+			box-shadow: inset 0 1px 0 0 #dddddd;
+		}
+		
+    
+    
+	
+		
+		
 /* Main */
 
 	.main {
@@ -2807,7 +2847,28 @@ input, select, textarea {
 			.main .goto-next:hover {
 				background-color: rgba(144, 144, 144, 0.15);
 			}
-
+    
+    
+    #spoheader {
+		height: 10vh;
+		position: relative;
+		text-align: center;
+	}
+        #spoheader spoheader {
+			color: rgba(255, 255, 255, 0.5);
+			display: inline-block;
+			padding-bottom: 8em;
+			vertical-align: middle;
+		}
+		
+        #spoheader spoheader p {
+        
+                text-align: center;
+				color: #ffffff;
+				font-weight: 700;
+				margin: 1.5em 0 0 0;
+        }
+			
 /* Header */
 
 	#header {
@@ -2822,6 +2883,7 @@ input, select, textarea {
 			height: 100vh;
 			vertical-align: middle;
 		}
+		
 
 		#header header {
 			color: rgba(255, 255, 255, 0.5);
@@ -3122,6 +3184,10 @@ input, select, textarea {
 				display: block;
 				margin: 0 0 4em 0;
 			}
+			
+			.main .spoticontainer {
+				padding: 3em 3em 8em 3em ;
+			}
 
 			.main .container {
 				padding: 3em 3em 8em 3em ;
@@ -3142,6 +3208,11 @@ input, select, textarea {
 				margin-left: -40%;
 				padding: 3em;
 			}
+			
+			#spoheader spoheader {
+                padding-bottom: 9em;
+				width: 80%;
+            }
 
 		/* Footer */
 
@@ -3174,10 +3245,14 @@ input, select, textarea {
 
 		/* Main */
 
+            .main .spoticontainer {
+				padding: 3em 1.5em 1em 1.5em ;
+			}
+			
 			.main .container {
 				padding: 3em 1.5em 1em 1.5em ;
 			}
-
+			
 				.main .container .image.primary:first-child {
 					margin: -1.5em 0 2.5em 0;
 				}
@@ -3196,10 +3271,14 @@ input, select, textarea {
 					height: 80vh;
 				}
 
+				#spoheader spoheader {
+                    padding-bottom: 0;
+                }
+				
 				#header header {
 					padding-bottom: 0;
 				}
-
+				
 					#header header h1 {
 						font-size: 2em;
 					}
@@ -3302,6 +3381,10 @@ input, select, textarea {
 
 		/* Main */
 
+            .main .spoticontainer {
+				padding: 3em 1em 1em 1em ;
+			}
+			
 			.main .container {
 				padding: 3em 1em 1em 1em ;
 			}

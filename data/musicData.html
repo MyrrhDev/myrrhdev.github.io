@@ -19,9 +19,8 @@
 	</head>
 	<body class="is-preload">
 		<noscript>
-		  You need to enable JavaScript to run this app.
+		  You need to enable JavaScript to run this.
 		</noscript>
-		
 		<section id="spoheader">
 			<spoheader class="major">
 			<p> What was my mood like last month?</p>	
@@ -30,34 +29,36 @@
 		<section id="spotify" class="main special">
 			<div class="spoticontainer" align= "left">
 			<p><h2>Studies into Music: Song Features and Lyrics</h2></p>
-		<p>Songs are made both of music and lyrics, my plan is to run both studies. First, in part I focusing on the song features and part II exploring the lyrics. Lastly, a comparative study to see which is most likely to be a better predictive model for mood (happy, sad, angry, relaxed).
-
-1) Descriptive analysis of my song features
-
-2) Data Transformation
-
-3) Another dataset, gathering their features and cleaning a larger dataset
-
-4) Training new larger dataset model based on features: Supervised learning (Decision Tree & Random Forest)</p>
-		
-		<p>Here's the interactive Jupyter Notebook I used to create this study:</p>
-		<p> <a href= "https://mybinder.org/v2/gist/MyrrhDev/93c5bb190b665c2e87e774f83b41bda8/master" target = "_blank"><img alt="Binder" class= "narrow" 
-		src="https://mybinder.org/badge_logo.svg" width = "109"> </a>
-		</p><p>This builds an image with Docker</p>
-				
-		<p>What are you looking at?</p><p>
-I built this using: Docker, Python, Spotipy, jupyter notebooks, 
-binder, numpy, scipy, pandas, scikit-learn, matplotlib</p>
-	<img src="scitools.jpg" height="110" width="222">
-				<p>Here's a preview based on my most played songs last month:</p>
-				<p>You'll see the kind of mood I was in based on the following features:
+			<p>Songs are made both of music and lyrics, my plan is to run both studies. 
+			First, in part I focusing on the song features and part II exploring the lyrics. 
+			Lastly, a comparative study to see which is most likely to be a better predictive 
+			model for mood (happy, sad, angry, relaxed).</p><p>
+			<li>Descriptive analysis of my song features</li>
+			<li>Data Transformation</li>
+			<li>Another dataset, gathering their features and cleaning a larger dataset</li>
+			<li>Training new larger dataset model based on features: Supervised learning (Decision Tree & Random Forest)</li>
+			</p>
+			<p>What are you looking at? I built this using: <b>Docker, Python (spotipy, jupyter notebooks, 
+			numpy, scipy, pandas, scikit-learn, matplotlib) and Binder.</b> I'm only posting highlights in this page, but here's the complete interactive Jupyter Notebook I used to create this study in more detail: (This builds an image with Docker with Binder)</p>
+			<p align = "center"> <a href= "https://mybinder.org/v2/gist/MyrrhDev/93c5bb190b665c2e87e774f83b41bda8/master" target = "_blank">
+				<img alt="Binder" class= "narrow" src="https://mybinder.org/badge_logo.svg" width = "119"></a></p><p align = "center">
+			<img src="scitools.jpg" height="110" width="222"></p>
+			
+			<h3>Descriptive Statistical Analysis</h3>
+			<p>Here's a preview based on my most played songs last month:</p>
+			<iframe src="list.html" height="350" width="900"></iframe>
+			<p>You'll see the kind of mood I was in based on the following features:
 			acousticness,		energy,		loudness, 		tempo,		danceability,		instrumentalness,		speechiness, and valence
-		of my most played songs last month.</p> 
-		
-		<iframe src="graphs.html" height="650" width="1100"></iframe>
-		
-				
-					
+			of my most played songs last month.</p> 
+			<iframe src="graphs.html" height="650" width="1100"></iframe>
+			<p>Let's explore my results then.
+			Seems that  <b>danceability</b> and <b>energy</b> are positively skewed in my songs, as well as <b>loudness</b>.
+
+			Not many of my recently played tracks have much <b>speechiness</b>, I guess I haven't listen to Logic in a while. Same things goes for <b>liveness, acousticness and instrumentalness</b> shows me that I don't really listen to acoustic music, music without lyrics or recorded in a live setting.
+
+			Looking into <b>tempo</b>, it seems to be slightly negatively skewed but mostly peaking at 120BPM which as a fun fact is known as running BPM and among the ones you want to use to do CPR.
+
+			Finally, <b>valence</b> seems to be the most normally distributed feature of them all, indicating that I don't seem to mind the musical positiveness of a song as long as it's energectic and upbeat so much so that you can dance to it. This result makes complete sense to me as I look for a 'keep me going' effect whenever I listen to music.</p>		
 			</div>
 <!-- Footer -->
 				<footer>

@@ -16,7 +16,7 @@ let pose;
 let skeleton;
 
 let brain;
-let poseLabel = "Y";
+let poseLabel="Nothing yet!";
 
 function setup() {
   createCanvas(640, 480);

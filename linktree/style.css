@@ -12,7 +12,7 @@
 body {
   background: var(--darkest-color);
   color: var(--lightest-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .container {

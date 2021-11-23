@@ -1,0 +1,122 @@
+body {
+  padding-top: 0px;
+  padding-bottom: 48px;
+  color: #5a5a5a;
+}
+
+/*Menu*/
+#cssmenu {
+    position: fixed;
+    display: none;
+    width: 250px;
+    height: 100%;
+    top: 58px;
+    left: -40px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #d8d8d8;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px #000;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#cssmenu > ul li a {
+  display: block;
+  position: relative;
+  margin: 0;
+  border-top: 1px dotted #3a3a3a;
+  border-bottom: 1px dotted #1b1b1b;
+  padding: 11px 20px;
+
+  font-family: Helvetica, Arial, sans-serif;
+  color: #d8d8d8;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px #000;
+  font-size: 13px;
+  font-weight: 300;
+
+  background: #343a40;
+}
+
+/*Sign-in Form
+-------------------------*/
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 64px;
+}
+
+.carousel-caption {
+  bottom: 48px;
+  z-index: 10;
+}
+
+.item {
+  height: 512px;
+  background-color: #777;
+}
+.item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 512px;
+}
+
+.featurette-divider {
+  margin: 80px 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.8px;
+}
+
+@media (min-width: 640px) {
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 112px;
+  }
+}

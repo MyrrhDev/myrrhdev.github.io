@@ -30,3 +30,7 @@
 .dropdown-toggle {
   outline: 0;
 }
+
+.new-header {
+  background-color: rgba(255, 137, 0, 1);
+}
